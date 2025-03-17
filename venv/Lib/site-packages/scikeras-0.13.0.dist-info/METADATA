@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: scikeras
+Version: 0.13.0
+Summary: Scikit-Learn API wrapper for Keras.
+Home-page: https://github.com/adriangb/scikeras
+License: MIT
+Keywords: keras,tensorflow,scikit-learn,deep-learning,python
+Author: Adrian Garcia Badaracco
+Author-email: 1755071+adriangb@users.noreply.github.com
+Requires-Python: >=3.9.0,<4
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: tensorflow
+Provides-Extra: test
+Requires-Dist: keras (>=3.2.0)
+Requires-Dist: scikit-learn (>=1.4.2)
+Requires-Dist: tensorflow (>=2.16.1) ; extra == "tensorflow" or extra == "test"
+Project-URL: Documentation, https://www.adriangb.com/scikeras/
+Project-URL: Repository, https://github.com/adriangb/scikeras
+Description-Content-Type: text/markdown
+
+# Scikit-Learn Wrapper for Keras
+
+[![Build Status](https://github.com/adriangb/scikeras/workflows/Tests/badge.svg)](https://github.com/adriangb/scikeras/actions?query=workflow%3ATests+branch%3Amaster)
+[![Coverage Status](https://codecov.io/gh/adriangb/scikeras/branch/master/graph/badge.svg)](https://codecov.io/gh/adriangb/scikeras)
+[![Docs](https://github.com/adriangb/scikeras/workflows/Build%20Docs/badge.svg)](https://www.adriangb.com/scikeras/)
+
+Scikit-Learn compatible wrappers for Keras Models.
+
+## Why SciKeras
+
+SciKeras is derived from and API compatible with the now deprecated / removed `tf.keras.wrappers.scikit_learn`.
+
+An overview of the differences as compared to the TF wrappers can be found in our
+[migration](https://www.adriangb.com/scikeras/stable/migration.html) guide.
+
+## Installation
+
+This package is available on PyPi:
+
+```bash
+# Tensorflow
+pip install scikeras[tensorflow]
+```
+
+Note that `pip install scikeras[tensorflow]` is basically equivalent to `pip install scikeras tensorflow`
+and is offered just for convenience. You can also install just SciKeras with
+`pip install scikeras`, but you will need a version of tensorflow installed at
+runtime or SciKeras will throw an error when you try to import it.
+
+The current version of SciKeras depends on `scikit-learn>=1.4.1post1` and `Keras>=3.2.0`.
+
+### Migrating from `keras.wrappers.scikit_learn`
+
+Please see the [migration](https://www.adriangb.com/scikeras/stable/migration.html) section of our documentation.
+
+## Documentation
+
+Documentation is available at [https://www.adriangb.com/scikeras/](https://www.adriangb.com/scikeras/).
+
+## Contributing
+
+See [CONTRIBUTING.md](https://github.com/adriangb/scikeras/blob/master/CONTRIBUTING.md)
+
